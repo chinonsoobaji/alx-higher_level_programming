@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
-def update_dictionary(a_dict, key, value):
+def multiply_by_2(a_dict):
     """
     add or replace a new key value in dict
     """
     if a_dict is None:
         return None
-    a_dict[key] = value
-    return a_dict
+    return {
+        key: a_dict[key] * 2 for key in a_dict
+    }
